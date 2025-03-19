@@ -1,16 +1,19 @@
 package ms.project.SF5BtG.book;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
+import jakarta.persistence.ManyToOne;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 import ms.project.SF5BtG.author.Author;
+import ms.project.SF5BtG.publisher.Publisher;
 
 @Entity
 public class Book {
@@ -21,11 +24,18 @@ public class Book {
   private String title;
   private String isbn;
 
+  @ManyToOne
+  private Publisher publisher;
+
   @ManyToMany
   @JoinTable(name = "author_book",
   joinColumns = @JoinColumn(name = "author_id"),
   inverseJoinColumns = @JoinColumn(name = "book_id"))
   private Set<Author> authors = new HashSet<>();
+
+
+  public Book() {
+  }
 
   public Book(String title, String isbn) {
     this.title = title;
@@ -56,6 +66,14 @@ public class Book {
     this.isbn = isbn;
   }
 
+  public Publisher getPublisher() {
+    return publisher;
+  }
+
+  public void setPublisher(Publisher publisher) {
+    this.publisher = publisher;
+  }
+
   public Set<Author> getAuthors() {
     return authors;
   }
@@ -70,10 +88,8 @@ public class Book {
         "id=" + id +
         ", title='" + title + '\'' +
         ", isbn='" + isbn + '\'' +
-        ", authors=" + authors +
         '}';
   }
-
 
   @Override
   public boolean equals(Object o) {
