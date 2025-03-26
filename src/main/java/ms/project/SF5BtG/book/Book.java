@@ -1,7 +1,7 @@
 package ms.project.SF5BtG.book;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -24,9 +24,11 @@ public class Book {
   private String title;
   private String isbn;
 
+  @JsonIgnore
   @ManyToOne
   private Publisher publisher;
 
+  @JsonIgnore
   @ManyToMany
   @JoinTable(name = "author_book",
   joinColumns = @JoinColumn(name = "author_id"),
