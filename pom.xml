@@ -5,9 +5,9 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>ms.springframework</groupId>
-	<artifactId>Spring5-classic</artifactId>
+	<artifactId>SpringFramework5-classic</artifactId>
 	<version>1.0.0</version>
-	<name>Spring5-classic</name>
+	<name>SpringFramework5-classic</name>
 
 	<properties>
 		<java.version>17</java.version>
