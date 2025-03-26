@@ -1,4 +1,4 @@
-package ms.project.SF5BtG.book;
+package ms.springframework.book;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
@@ -12,8 +12,8 @@ import jakarta.persistence.ManyToOne;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
-import ms.project.SF5BtG.author.Author;
-import ms.project.SF5BtG.publisher.Publisher;
+import ms.springframework.author.Author;
+import ms.springframework.publisher.Publisher;
 
 @Entity
 public class Book {

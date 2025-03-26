@@ -1,4 +1,4 @@
-package ms.project.SF5BtG.book;
+package ms.springframework.book;
 
 import java.util.List;
 import org.springframework.http.HttpStatus;

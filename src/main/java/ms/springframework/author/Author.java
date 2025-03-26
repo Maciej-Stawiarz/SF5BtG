@@ -1,4 +1,4 @@
-package ms.project.SF5BtG.author;
+package ms.springframework.author;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,7 +8,7 @@ import jakarta.persistence.ManyToMany;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
-import ms.project.SF5BtG.book.Book;
+import ms.springframework.book.Book;
 
 @Entity
 public class Author {

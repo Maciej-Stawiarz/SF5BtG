@@ -1,4 +1,4 @@
-package ms.project.SF5BtG.publisher;
+package ms.springframework.publisher;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -10,7 +10,7 @@ import jakarta.persistence.OneToMany;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
-import ms.project.SF5BtG.book.Book;
+import ms.springframework.book.Book;
 
 @Entity
 public class Publisher {

@@ -1,13 +1,12 @@
-package ms.project.SF5BtG.bootstrap;
+package ms.springframework.bootstrap;
 
-import ms.project.SF5BtG.author.Author;
-import ms.project.SF5BtG.author.AuthorRepository;
-import ms.project.SF5BtG.book.Book;
-import ms.project.SF5BtG.book.BookRepository;
-import ms.project.SF5BtG.publisher.Publisher;
-import ms.project.SF5BtG.publisher.PublisherRepository;
+import ms.springframework.author.Author;
+import ms.springframework.author.AuthorRepository;
+import ms.springframework.book.Book;
+import ms.springframework.book.BookRepository;
+import ms.springframework.publisher.Publisher;
+import ms.springframework.publisher.PublisherRepository;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 
 @Component

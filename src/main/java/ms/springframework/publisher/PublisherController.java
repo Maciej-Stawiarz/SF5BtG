@@ -1,8 +1,6 @@
-package ms.project.SF5BtG.publisher;
+package ms.springframework.publisher;
 
 import java.util.List;
-import ms.project.SF5BtG.book.Book;
-import ms.project.SF5BtG.book.BookRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

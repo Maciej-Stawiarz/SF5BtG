@@ -1,4 +1,4 @@
-package ms.project.SF5BtG.publisher;
+package ms.springframework.publisher;
 
 import java.util.List;
 import org.springframework.data.repository.CrudRepository;

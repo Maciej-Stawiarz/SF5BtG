@@ -1,4 +1,4 @@
-package ms.project.SF5BtG.author;
+package ms.springframework.author;
 
 
 import org.springframework.data.repository.CrudRepository;
